@@ -1,2 +1,0 @@
-C:\Projects\DesignPatterns\DPTryOne\DPTryOne\DPTryOne\bin\Debug\DPTryOne.exe.config
-C:\Projects\DesignPatterns\DPTryOne\DPTryOne\bin\Debug\DPTryOne.exe.config
