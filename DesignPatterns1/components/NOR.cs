@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns1.components
+namespace DesignPatterns1
 {
     class NOR : GenericComponent
     {

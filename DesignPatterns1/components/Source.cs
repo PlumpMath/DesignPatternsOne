@@ -8,20 +8,15 @@ namespace DesignPatterns1
 {
     class Source : GenericComponent
     {
-        public Source()
+        public Source(bool value)
         {
             input = new GenericComponent[0];
+            this.state = value;
         }
 
         public override void trigger()
         {
             notifyOutput();
-        }
-
-        public void activate(bool value)
-        {
-            this.state = value;
-            trigger();
         }
     }
 }
