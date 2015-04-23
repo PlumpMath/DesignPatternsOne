@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    class Probe : GenericComponent
+    public class Probe : GenericComponent
     {
         
         public Probe()

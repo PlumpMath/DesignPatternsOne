@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    class XOR : GenericComponent
+    public class XOR : GenericComponent
     {
         public XOR()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    class Source : GenericComponent
+    public class Source : GenericComponent
     {
         public Source(bool value)
         {

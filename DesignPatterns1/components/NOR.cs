@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    class NOR : GenericComponent
+    public class NOR : GenericComponent
     {
         public NOR()
         {

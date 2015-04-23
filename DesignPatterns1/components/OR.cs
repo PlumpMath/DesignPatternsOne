@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    class OR : GenericComponent
+    public class OR : GenericComponent
     {
         public OR()
         {

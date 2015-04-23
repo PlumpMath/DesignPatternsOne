@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    class NAND : GenericComponent
+    public class NAND : GenericComponent
     {
         public NAND()
         {
