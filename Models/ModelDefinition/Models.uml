@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4471a630-4ed6-4ba2-ab00-3a285b0cd4b8"
+  name="Models" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+        name="GenericComponent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="91e03fbf-626c-42f6-983f-90f15ae6685b"
+            isDerived="false"
+            sourceEndRoleName="GenericComponent"
+            targetEndRoleName="GenericComponent"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+              LastKnownName="GenericComponent"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47b827e0-2ca3-4552-9203-9f23c1e3a6d6"
+                  name="GenericComponent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7de33794-895b-45be-869d-aaf7660e055c"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b410c7ca-358a-478a-ad23-c35d1a80249b"
+                      name="Upper"
+                      value="0" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58818ebd-9fcb-4392-8b73-cfefb50bfae2"
+                  name="GenericComponent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="740b9d31-5158-4c63-9abd-954e443df32a"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9f0e043e-1120-44a9-9c2b-ffb5b1f3d123"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="e0d11fb6-2e3d-4554-af3a-74b2b2befb6b"
+            name="Input"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7551daaf-fdcd-4712-a07b-c131615edd90"
+            name="AddInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fcd2e2d1-eac9-4d96-b687-b09c6d1de2c8"
+            name="RemoveInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="84e75806-386e-4dec-96ae-3b757aa3d7ab"
+            name="Trigger"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="eb7e5bc3-28eb-433e-8cb4-f681884d2b16"
+        name="IProvider"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9235a676-3b6b-4bdd-8eb9-8b445cd404ab"
+        name="ISubscriber"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a783062e-49b0-4a16-978f-58205008cc23"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="02b822d0-d456-4f7b-83c0-b226120bbab1"
+        name="NOT"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="e4ee171a-5025-4b1e-948e-908f9e929e31"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+              LastKnownName="GenericComponent"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df65fe74-df92-45bb-9e46-49e86a713723"
+        name="AND"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="42a3b6e5-d49b-4299-b06d-46796f8c2836"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+              LastKnownName="GenericComponent"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e28a48a4-becd-447b-957d-be2328bab414"
+        name="OR"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d9ce2f17-ad1d-41ee-8ec9-dfd225ff1441"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+              LastKnownName="GenericComponent"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bec69a12-3881-4727-9cd6-e4883dc6cd61"
+        name="NOR"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f87b6eb7-7393-40ab-9f99-86a90cdc3ea6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+              LastKnownName="GenericComponent"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6c0f37fb-625a-4f55-ae38-272471756e74"
+        name="NAND"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="621a47a0-d842-4277-9d26-533c39861ed9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+              LastKnownName="GenericComponent"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="338d18bb-667b-4799-b747-6752bc70d8ab"
+        name="XOR"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d8b80c7e-8800-43df-a292-6b1a7ba2c831"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f721e0b2-95e2-431c-99c9-bf7d2c9e76e6"
+              LastKnownName="GenericComponent"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
