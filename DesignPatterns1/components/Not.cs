@@ -13,7 +13,7 @@ namespace DesignPatterns1
             input = new GenericComponent[1];
         }
 
-        public override void trigger()
+        public override void Execute()
         {
             GenericComponent source = input[0];
             this.state = !source.state;

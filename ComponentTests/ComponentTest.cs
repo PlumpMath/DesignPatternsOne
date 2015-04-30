@@ -16,9 +16,9 @@ namespace ComponentTests
             NOT inverter2 = new NOT();
 
             inverter.addInput(srctrue);
-            srctrue.trigger();
+            srctrue.Execute();
             inverter2.addInput(srcfalse);
-            srcfalse.trigger();
+            srcfalse.Execute();
 
             Assert.AreEqual(inverter.state, false);
             Assert.AreEqual(inverter2.state, true);
@@ -42,8 +42,8 @@ namespace ComponentTests
             and4.addInput(srctrue);
             and4.addInput(srctrue);
 
-            srctrue.trigger();
-            srcfalse.trigger();
+            srctrue.Execute();
+            srcfalse.Execute();
 
             Assert.AreEqual(and.state, false);
             Assert.AreEqual(and2.state, false);
@@ -69,8 +69,8 @@ namespace ComponentTests
             or4.addInput(srctrue);
             or4.addInput(srctrue);
 
-            srctrue.trigger();
-            srcfalse.trigger();
+            srctrue.Execute();
+            srcfalse.Execute();
 
             Assert.AreEqual(or.state, false);
             Assert.AreEqual(or2.state, true);
@@ -96,8 +96,8 @@ namespace ComponentTests
             nor4.addInput(srctrue);
             nor4.addInput(srctrue);
 
-            srctrue.trigger();
-            srcfalse.trigger();
+            srctrue.Execute();
+            srcfalse.Execute();
 
             Assert.AreEqual(nor.state, true);
             Assert.AreEqual(nor2.state, false);
@@ -123,8 +123,8 @@ namespace ComponentTests
             nand4.addInput(srctrue);
             nand4.addInput(srctrue);
 
-            srctrue.trigger();
-            srcfalse.trigger();
+            srctrue.Execute();
+            srcfalse.Execute();
 
             Assert.AreEqual(nand.state, true);
             Assert.AreEqual(nand2.state, true);
@@ -150,8 +150,8 @@ namespace ComponentTests
             xor4.addInput(srctrue);
             xor4.addInput(srctrue);
 
-            srctrue.trigger();
-            srcfalse.trigger();
+            srctrue.Execute();
+            srcfalse.Execute();
 
             Assert.AreEqual(xor.state, false);
             Assert.AreEqual(xor2.state, true);
@@ -169,8 +169,8 @@ namespace ComponentTests
             Probe probe2 = new Probe();
             probe2.addInput(srctrue);
 
-            srctrue.trigger();
-            srcfalse.trigger();
+            srctrue.Execute();
+            srcfalse.Execute();
 
             Assert.AreEqual(probe.state, false);
             Assert.AreEqual(probe2.state, true);

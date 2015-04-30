@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    class Program
+    class Curcuit
     {
         static void Main(string[] args)
         {
             
-            Program.Import();
+            Curcuit.Import();
             Console.ReadLine();
         }
 
@@ -19,7 +19,7 @@ namespace DesignPatterns1
         {
             Dictionary<string, GenericComponent> components = new Dictionary<string, GenericComponent>();
 
-            string[] lines = System.IO.File.ReadAllLines("Resources/circuit4.txt");
+            string[] lines = System.IO.File.ReadAllLines("Resources/circuit2.txt");
             bool linking = false;
             foreach (string line in lines)
             {
@@ -61,7 +61,7 @@ namespace DesignPatterns1
             {
                 if (kv.Value is Source)
                 {
-                    kv.Value.trigger();
+                    kv.Value.Trigger();
                 }
             }
             foreach (KeyValuePair<string, GenericComponent> kv in components)

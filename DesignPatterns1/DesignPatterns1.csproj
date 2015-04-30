@@ -41,16 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="components\AND.cs" />
-    <Compile Include="components\NAND.cs" />
-    <Compile Include="components\NOR.cs" />
-    <Compile Include="components\NOT.cs" />
-    <Compile Include="components\OR.cs" />
-    <Compile Include="components\Probe.cs" />
-    <Compile Include="components\Source.cs" />
-    <Compile Include="components\XOR.cs" />
+    <Compile Include="Components\AND.cs" />
+    <Compile Include="Components\NAND.cs" />
+    <Compile Include="Components\NOR.cs" />
+    <Compile Include="Components\NOT.cs" />
+    <Compile Include="Components\OR.cs" />
+    <Compile Include="Components\Probe.cs" />
+    <Compile Include="Components\Source.cs" />
+    <Compile Include="Components\XOR.cs" />
     <Compile Include="GenericComponent.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Curcuit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,16 +58,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\circuit1.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\circuit2.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\circuit3.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\circuit4.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

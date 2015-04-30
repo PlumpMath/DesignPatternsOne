@@ -50,13 +50,25 @@ namespace DesignPatterns1
             state = false;
         }
 
-        public abstract void trigger();
+        public abstract void Execute();
+
+        public void Trigger()
+        {
+            try
+            {
+                Execute();
+            }
+            catch (StackOverflowException e)
+            {
+                Console.WriteLine("Exception! Exception! We hebben een Exception!");
+            }
+        }
 
         protected void notifyOutput()
         {
             for (int i = 0; i < output.Count; i++)
             {
-                output[i].trigger();
+                output[i].Trigger();
             }
         }
 

@@ -13,7 +13,7 @@ namespace DesignPatterns1
             input = new GenericComponent[2];
         }
 
-        public override void trigger()
+        public override void Execute()
         {
             if (!input[0].state && !input[1].state)
             {

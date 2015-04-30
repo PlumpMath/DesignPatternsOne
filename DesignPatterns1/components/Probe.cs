@@ -14,7 +14,7 @@ namespace DesignPatterns1
             input = new GenericComponent[1];
         }
 
-        public override void trigger()
+        public override void Execute()
         {
             this.state = input[0].state;
             notifyOutput();

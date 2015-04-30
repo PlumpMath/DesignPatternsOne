@@ -14,7 +14,7 @@ namespace DesignPatterns1
             this.state = value;
         }
 
-        public override void trigger()
+        public override void Execute()
         {
             notifyOutput();
         }
