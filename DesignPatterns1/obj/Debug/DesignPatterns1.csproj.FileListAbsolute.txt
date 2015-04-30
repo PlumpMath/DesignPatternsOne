@@ -1,0 +1,6 @@
+E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\bin\Debug\DesignPatterns1.exe.config
+E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\bin\Debug\DesignPatterns1.exe
+E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\bin\Debug\DesignPatterns1.pdb
+E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\obj\Debug\DesignPatterns1.exe
+E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\obj\Debug\DesignPatterns1.pdb
+E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\obj\Debug\DesignPatterns1.csprojResolveAssemblyReference.cache
