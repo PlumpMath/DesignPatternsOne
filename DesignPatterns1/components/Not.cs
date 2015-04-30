@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns1
 {
-    public class Not : GenericComponent
+    public class NOT : GenericComponent
     {
-        public Not()
+        public NOT()
         {
             input = new GenericComponent[1];
         }

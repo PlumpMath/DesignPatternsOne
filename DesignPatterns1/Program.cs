@@ -19,7 +19,7 @@ namespace DesignPatterns1
         {
             Dictionary<string, GenericComponent> components = new Dictionary<string, GenericComponent>();
 
-            string[] lines = System.IO.File.ReadAllLines(@"circuit1.txt");
+            string[] lines = System.IO.File.ReadAllLines("Resources/circuit4.txt");
             bool linking = false;
             foreach (string line in lines)
             {
@@ -57,12 +57,13 @@ namespace DesignPatterns1
                     }
                 }
             }
-            Source cin = (Source)components["Cin"];
-            Source a = (Source)components["A"];
-            Source b = (Source)components["B"];
-            cin.trigger();
-            a.trigger();
-            b.trigger();
+            foreach(KeyValuePair<string,GenericComponent> kv in components)
+            {
+                if (kv.Value is Source)
+                {
+                    kv.Value.trigger();
+                }
+            }
             foreach (KeyValuePair<string, GenericComponent> kv in components)
             {
                 Console.WriteLine(kv.Key + " " + kv.Value.state);

@@ -82,7 +82,7 @@ namespace DesignPatterns1
                 case "NOR":
                     return new NOR();
                 case "NOT":
-                    return new Not();
+                    return new NOT();
                 case "OR":
                     return new OR();
                 case "XOR":

@@ -12,8 +12,8 @@ namespace ComponentTests
         {
             Source srctrue = new Source(true);
             Source srcfalse = new Source(false);
-            Not inverter = new Not();
-            Not inverter2 = new Not();
+            NOT inverter = new NOT();
+            NOT inverter2 = new NOT();
 
             inverter.addInput(srctrue);
             srctrue.trigger();

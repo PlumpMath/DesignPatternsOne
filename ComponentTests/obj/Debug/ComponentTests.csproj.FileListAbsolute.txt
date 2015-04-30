@@ -5,3 +5,10 @@ E:\Gebruikers\Yannik\ArmA\DesignPatterns1\ComponentTests\bin\Debug\DesignPattern
 E:\Gebruikers\Yannik\ArmA\DesignPatterns1\ComponentTests\bin\Debug\DesignPatterns1.pdb
 E:\Gebruikers\Yannik\ArmA\DesignPatterns1\ComponentTests\obj\Debug\ComponentTests.dll
 E:\Gebruikers\Yannik\ArmA\DesignPatterns1\ComponentTests\obj\Debug\ComponentTests.pdb
+C:\Projects\DesignPatterns\ComponentTests\bin\Debug\ComponentTests.dll
+C:\Projects\DesignPatterns\ComponentTests\bin\Debug\ComponentTests.pdb
+C:\Projects\DesignPatterns\ComponentTests\bin\Debug\DesignPatterns1.exe
+C:\Projects\DesignPatterns\ComponentTests\bin\Debug\DesignPatterns1.pdb
+C:\Projects\DesignPatterns\ComponentTests\obj\Debug\ComponentTests.csprojResolveAssemblyReference.cache
+C:\Projects\DesignPatterns\ComponentTests\obj\Debug\ComponentTests.dll
+C:\Projects\DesignPatterns\ComponentTests\obj\Debug\ComponentTests.pdb

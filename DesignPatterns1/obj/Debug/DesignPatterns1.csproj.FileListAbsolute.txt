@@ -4,3 +4,13 @@ E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\bin\Debug\DesignPatter
 E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\obj\Debug\DesignPatterns1.exe
 E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\obj\Debug\DesignPatterns1.pdb
 E:\Gebruikers\Yannik\ArmA\DesignPatterns1\DesignPatterns1\obj\Debug\DesignPatterns1.csprojResolveAssemblyReference.cache
+C:\Projects\DesignPatterns\DesignPatterns1\bin\Debug\DesignPatterns1.exe.config
+C:\Projects\DesignPatterns\DesignPatterns1\bin\Debug\DesignPatterns1.exe
+C:\Projects\DesignPatterns\DesignPatterns1\bin\Debug\DesignPatterns1.pdb
+C:\Projects\DesignPatterns\DesignPatterns1\obj\Debug\DesignPatterns1.csprojResolveAssemblyReference.cache
+C:\Projects\DesignPatterns\DesignPatterns1\obj\Debug\DesignPatterns1.exe
+C:\Projects\DesignPatterns\DesignPatterns1\obj\Debug\DesignPatterns1.pdb
+C:\Projects\DesignPatterns\DesignPatterns1\bin\Debug\Resources\circuit1.txt
+C:\Projects\DesignPatterns\DesignPatterns1\bin\Debug\Resources\circuit2.txt
+C:\Projects\DesignPatterns\DesignPatterns1\bin\Debug\Resources\circuit3.txt
+C:\Projects\DesignPatterns\DesignPatterns1\bin\Debug\Resources\circuit4.txt
