@@ -17,7 +17,7 @@ namespace DesignPatterns.Visitor
             this.probeList.Clear();
         }
 
-        public override void visit(Probe probe )
+        public override void Visit(Probe probe )
         {
             probeList.AddLast(probe);
         }

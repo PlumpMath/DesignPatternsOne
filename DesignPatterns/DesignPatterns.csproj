@@ -51,8 +51,10 @@
     <Compile Include="Components\XOR.cs" />
     <Compile Include="Components\GenericComponent.cs" />
     <Compile Include="Curcuit.cs" />
+    <Compile Include="Factories\GenericComponentFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Visitor\ComponentVisitor.cs" />
+    <Compile Include="Visitor\SourceListVisitor.cs" />
     <Compile Include="Visitor\MakeProbeListVisitor.cs" />
   </ItemGroup>
   <ItemGroup>

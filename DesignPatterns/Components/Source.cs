@@ -15,9 +15,9 @@ namespace DesignPatterns.Components
             this.state = value;
         }
 
-        public override void accept(ComponentVisitor visitor)
+        public override void Accept(ComponentVisitor visitor)
         {
-            visitor.visit(this);
+            visitor.Visit(this);
         }
 
         public override void Execute()

@@ -14,9 +14,9 @@ namespace DesignPatterns.Components
             input = new GenericComponent[2];
         }
 
-        public override void accept(ComponentVisitor visitor)
+        public override void Accept(ComponentVisitor visitor)
         {
-            visitor.visit(this);
+            visitor.Visit(this);
         }
 
         public override void Execute()

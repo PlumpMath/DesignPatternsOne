@@ -9,7 +9,7 @@ namespace DesignPatterns.Factories
 {
     public static class GenericComponentFactory
     {
-        public static GenericComponent CreateComponent(String type)
+        public static GenericComponent CreateComponent(string type)
         {
             switch (type)
             {

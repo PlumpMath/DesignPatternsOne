@@ -45,7 +45,7 @@ namespace DesignPatterns.Components
 
         public List<GenericComponent> output = new List<GenericComponent>();
 
-        public abstract void accept( ComponentVisitor visitor);
+        public abstract void Accept( ComponentVisitor visitor);
         public GenericComponent()
         {
             state = false;
