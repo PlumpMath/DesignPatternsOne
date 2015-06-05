@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns1\DesignPatterns1.csproj">
+    <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj">
       <Project>{9541de2b-0d57-4d66-826b-34a93827182c}</Project>
-      <Name>DesignPatterns1</Name>
+      <Name>DesignPatterns</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

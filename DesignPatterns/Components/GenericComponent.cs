@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DesignPatterns.Visitor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns1
+namespace DesignPatterns.Components
 {
     public abstract class GenericComponent
     {
@@ -44,7 +45,7 @@ namespace DesignPatterns1
 
         public List<GenericComponent> output = new List<GenericComponent>();
 
-
+        public abstract void accept( ComponentVisitor visitor);
         public GenericComponent()
         {
             state = false;

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DesignPatterns.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns1
+namespace DesignPatterns
 {
     class Curcuit
     {
@@ -19,7 +20,7 @@ namespace DesignPatterns1
         {
             Dictionary<string, GenericComponent> components = new Dictionary<string, GenericComponent>();
 
-            string[] lines = System.IO.File.ReadAllLines("Resources/circuit2.txt");
+            string[] lines = System.IO.File.ReadAllLines("Resources/circuit1.txt");
             bool linking = false;
             foreach (string line in lines)
             {

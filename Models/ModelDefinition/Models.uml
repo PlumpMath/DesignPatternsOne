@@ -269,6 +269,12 @@
         </generalsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="78e4f160-0cb5-4ba3-a9ce-b68a8080043c"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_0953.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

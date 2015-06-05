@@ -7,7 +7,7 @@
     <ProjectGuid>{9541DE2B-0D57-4D66-826B-34A93827182C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPatterns1</RootNamespace>
+    <RootNamespace>DesignPatterns</RootNamespace>
     <AssemblyName>DesignPatterns1</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -49,9 +49,11 @@
     <Compile Include="Components\Probe.cs" />
     <Compile Include="Components\Source.cs" />
     <Compile Include="Components\XOR.cs" />
-    <Compile Include="GenericComponent.cs" />
+    <Compile Include="Components\GenericComponent.cs" />
     <Compile Include="Curcuit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitor\ComponentVisitor.cs" />
+    <Compile Include="Visitor\MakeProbeListVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

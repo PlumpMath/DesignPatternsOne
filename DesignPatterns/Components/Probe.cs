@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DesignPatterns.Visitor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns1
+namespace DesignPatterns.Components
 {
     public class Probe : GenericComponent
     {
@@ -12,6 +13,11 @@ namespace DesignPatterns1
         public Probe()
         {
             input = new GenericComponent[1];
+        }
+
+        public override void accept(ComponentVisitor visitor)
+        {
+            visitor.visit(this);
         }
 
         public override void Execute()

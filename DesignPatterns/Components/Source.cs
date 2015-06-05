@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DesignPatterns.Visitor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns1
+namespace DesignPatterns.Components
 {
     public class Source : GenericComponent
     {
@@ -12,6 +13,11 @@ namespace DesignPatterns1
         {
             input = new GenericComponent[0];
             this.state = value;
+        }
+
+        public override void accept(ComponentVisitor visitor)
+        {
+            visitor.visit(this);
         }
 
         public override void Execute()

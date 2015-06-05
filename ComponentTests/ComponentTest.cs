@@ -1,5 +1,5 @@
 ﻿using System;
-using DesignPatterns1;
+using DesignPatterns.Components;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ComponentTests
