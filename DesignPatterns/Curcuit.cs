@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Components;
+using DesignPatterns.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +39,7 @@ namespace DesignPatterns
                             string name = strings[0].Trim();
                             string type = strings[1].Trim();
                             type = type.Replace(";","");
-                            GenericComponent component = GenericComponent.CreateComponent(type);
+                            GenericComponent component = GenericComponentFactory.CreateComponent(type);
                             components.Add(name, component);
                         }
                         else
