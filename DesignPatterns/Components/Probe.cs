@@ -23,7 +23,7 @@ namespace DesignPatterns.Components
         public override void Execute()
         {
             this.state = input[0].state;
-            notifyOutput();
+            //notifyOutput();
         }
     }
 }

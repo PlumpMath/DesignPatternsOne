@@ -9,7 +9,7 @@ namespace DesignPatterns.Components
 {
     public abstract class GenericComponent
     {
-        public bool state { get; set; }
+        public bool state;
         protected bool AlreadyCalculated { get; set; }
         protected List<GenericComponent> input;
         public List<GenericComponent> output = new List<GenericComponent>();
@@ -37,10 +37,6 @@ namespace DesignPatterns.Components
         }
         public bool InputsCalculated()
         {
-            if (input.Count != input.Capacity)
-            {
-                return false;
-            }
             foreach(GenericComponent component in input)
             {
                 if(!component.AlreadyCalculated)
@@ -52,7 +48,11 @@ namespace DesignPatterns.Components
         }
         public bool ReadyToCalculate()
         {
-            if (InputsCalculated() && AlreadyCalculated == false)
+            if (input.Count != input.Capacity)
+            {
+                return false;
+            }
+            if (InputsCalculated() && !AlreadyCalculated)
             {
                 return true;
             }

@@ -24,26 +24,38 @@ namespace DesignPatterns
 
         public void Execute()
         {
-            int i = 0;
-            foreach(KeyValuePair<string,GenericComponent> kv in components)
-            {
-                if(kv.Value.ReadyToCalculate())
-                {
-                    kv.Value.Trigger();
-                    i++;
-                }
-            }
+            bool calculating = true;
+		    int componentsCalculated = 0;
+		    try {
+			    while (calculating) {
+				    bool cCalculated = false;
+				    foreach(KeyValuePair<string, GenericComponent> kv in components) {
+					    if(kv.Value.ReadyToCalculate()) {
+                            kv.Value.Trigger();
+						    componentsCalculated++;
+						    cCalculated = true;
+					    }
+				    }
+				    if(componentsCalculated == components.Count) {
+					    calculating = false;
+				    }
+				    else if (!cCalculated) {
+					    throw new Exception("Invalid circuit!");
+				    }
+			    }
+		    } catch (Exception e) {
+			    Console.WriteLine("ERROR: " + e.Message);
+		    }
             foreach (KeyValuePair<string, GenericComponent> kv in components)
             {
                 Console.WriteLine(kv.Key + " " + kv.Value.state);
             }
-            Console.WriteLine(i);
         }
 
         public void ReadLines()
         {
             components = new Dictionary<string,GenericComponent>();
-            string[] lines = File.ReadAllLines("Resources/circuit1.txt");
+            string[] lines = File.ReadAllLines("Resources/circuit4.txt");
             bool linking = false;
             foreach (string line in lines)
             {

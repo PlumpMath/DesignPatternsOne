@@ -22,7 +22,7 @@ namespace DesignPatterns.Components
 
         public override void Execute()
         {
-            notifyOutput();
+            //notifyOutput();
         }
     }
 }

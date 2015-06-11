@@ -23,7 +23,7 @@ namespace DesignPatterns.Components
         {
             GenericComponent source = input[0];
             this.state = !source.state;
-            notifyOutput();
+            //notifyOutput();
         }
     }
 }

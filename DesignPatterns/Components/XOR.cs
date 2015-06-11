@@ -25,7 +25,7 @@ namespace DesignPatterns.Components
             {
                 this.state = true;
             }
-            notifyOutput();
+            //notifyOutput();
         }
     }
 }
