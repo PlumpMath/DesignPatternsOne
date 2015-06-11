@@ -24,14 +24,20 @@ namespace DesignPatterns
 
         public void Execute()
         {
+            int i = 0;
             foreach(KeyValuePair<string,GenericComponent> kv in components)
             {
-                kv.Value.Trigger();
+                if(kv.Value.ReadyToCalculate())
+                {
+                    kv.Value.Trigger();
+                    i++;
+                }
             }
             foreach (KeyValuePair<string, GenericComponent> kv in components)
             {
                 Console.WriteLine(kv.Key + " " + kv.Value.state);
             }
+            Console.WriteLine(i);
         }
 
         public void ReadLines()

@@ -34,13 +34,13 @@ namespace DesignPatterns.Components
                 AlreadyCalculated = true;
                 Execute();
             }
-            else if (!AlreadyCalculated)
-            {
-                Console.WriteLine("FOUT FOUT FOUT JIJ KUT");
-            }
         }
         public bool InputsCalculated()
         {
+            if (input.Count != input.Capacity)
+            {
+                return false;
+            }
             foreach(GenericComponent component in input)
             {
                 if(!component.AlreadyCalculated)
@@ -52,7 +52,7 @@ namespace DesignPatterns.Components
         }
         public bool ReadyToCalculate()
         {
-            if (!AlreadyCalculated && InputsCalculated())
+            if (InputsCalculated() && AlreadyCalculated == false)
             {
                 return true;
             }
