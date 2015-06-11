@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Components;
 using DesignPatterns.Factories;
+using DesignPatterns.Visitor;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,11 +13,25 @@ namespace DesignPatterns
     public class Curcuit
     {
         private Dictionary<string, GenericComponent> components { get; set; }
+
         static void Main(string[] args)
         {
             Curcuit curcuit = new Curcuit();
             curcuit.ReadLines();
+            curcuit.Execute();
             Console.ReadLine();
+        }
+
+        public void Execute()
+        {
+            foreach(KeyValuePair<string,GenericComponent> kv in components)
+            {
+                kv.Value.Trigger();
+            }
+            foreach (KeyValuePair<string, GenericComponent> kv in components)
+            {
+                Console.WriteLine(kv.Key + " " + kv.Value.state);
+            }
         }
 
         public void ReadLines()

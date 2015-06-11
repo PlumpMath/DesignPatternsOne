@@ -11,7 +11,7 @@ namespace DesignPatterns.Components
     {
         public NOT()
         {
-            input = new GenericComponent[1];
+            input = input = new List<GenericComponent>(1);
         }
 
         public override void Accept(ComponentVisitor visitor)

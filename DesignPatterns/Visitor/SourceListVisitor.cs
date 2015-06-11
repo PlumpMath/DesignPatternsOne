@@ -7,19 +7,23 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Visitor
 {
-    public class MakeSourceListVisitor : ComponentVisitor
+    public class SourceListVisitor : ComponentVisitor
     {
         private LinkedList<Source> sourceList;
 
-        public MakeSourceListVisitor( LinkedList<Source> sourceList )
+        public SourceListVisitor(LinkedList<Source> sourceList)
         {
             this.sourceList = sourceList;
             this.sourceList.Clear();
         }
 
+        public LinkedList<Source> SourceList { get { return sourceList; } }
+
         public override void Visit(Source source )
         {
             sourceList.AddLast(source);
         }
+
+
     }
 }

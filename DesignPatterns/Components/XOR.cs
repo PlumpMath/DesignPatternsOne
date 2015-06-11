@@ -11,7 +11,7 @@ namespace DesignPatterns.Components
     {
         public XOR()
         {
-            input = new GenericComponent[2];
+            input = new List<GenericComponent>(2);
         }
 
         public override void Accept(ComponentVisitor visitor)

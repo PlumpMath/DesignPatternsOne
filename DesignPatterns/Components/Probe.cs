@@ -12,7 +12,7 @@ namespace DesignPatterns.Components
 
         public Probe()
         {
-            input = new GenericComponent[1];
+            input = new List<GenericComponent>(1);
         }
 
         public override void Accept(ComponentVisitor visitor)

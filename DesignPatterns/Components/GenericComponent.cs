@@ -10,8 +10,16 @@ namespace DesignPatterns.Components
     public abstract class GenericComponent
     {
         public bool state { get; set; }
-
-        protected GenericComponent[] input;
+        protected bool AlreadyCalculated { get; set; }
+        protected List<GenericComponent> input;
+        public List<GenericComponent> output = new List<GenericComponent>();
+        public GenericComponent()
+        {
+            AlreadyCalculated = false;
+            state = false;
+        }
+        public abstract void Execute();
+        public abstract void Accept(ComponentVisitor visitor);
         public void addInput(GenericComponent component)
         {
             if (modifyArray(null, component))
@@ -19,50 +27,36 @@ namespace DesignPatterns.Components
                 component.output.Add(this);
             }
         }
-
-        public void removeInput(GenericComponent component)
-        {
-            if (modifyArray(component, null))
-            {
-                component.output.Remove(this);
-            }
-        }
-
-        //executes a generic modification on the array, replacing the target component with the value
-        private bool modifyArray(GenericComponent target, GenericComponent value)
-        {
-            for (int i = 0; i < input.Length; i++)
-            {
-                GenericComponent c = input[i];
-                if (c == target)
-                {
-                    input[i] = value;
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public List<GenericComponent> output = new List<GenericComponent>();
-
-        public abstract void Accept( ComponentVisitor visitor);
-        public GenericComponent()
-        {
-            state = false;
-        }
-
-        public abstract void Execute();
-
         public void Trigger()
         {
-            try
+            if (ReadyToCalculate())
             {
+                AlreadyCalculated = true;
                 Execute();
             }
-            catch (StackOverflowException e)
+            else if (!AlreadyCalculated)
             {
-                Console.WriteLine("Exception! Exception! We hebben een Exception!");
+                Console.WriteLine("FOUT FOUT FOUT JIJ KUT");
             }
+        }
+        public bool InputsCalculated()
+        {
+            foreach(GenericComponent component in input)
+            {
+                if(!component.AlreadyCalculated)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public bool ReadyToCalculate()
+        {
+            if (!AlreadyCalculated && InputsCalculated())
+            {
+                return true;
+            }
+            return false;
         }
 
         protected void notifyOutput()
@@ -76,6 +70,17 @@ namespace DesignPatterns.Components
         public void printState()
         {
             Console.WriteLine(this.state);
+        }
+        //executes a generic modification on the array, replacing the target component with the value
+        private bool modifyArray(GenericComponent target, GenericComponent value)
+        {
+            int size = input.Count;
+            input.Add(value);
+            if (input.Count == size)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

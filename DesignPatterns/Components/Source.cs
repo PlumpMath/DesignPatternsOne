@@ -11,7 +11,7 @@ namespace DesignPatterns.Components
     {
         public Source(bool value)
         {
-            input = new GenericComponent[0];
+            input = new List<GenericComponent>(0);
             this.state = value;
         }
 
