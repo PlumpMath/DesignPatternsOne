@@ -25,6 +25,20 @@
     <Content Include="ModelDefinition\Package_0953.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="SequenceDiagrams\Curcuit_Execute.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\Curcuit_Execute.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\Curcuit_Execute.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SequenceDiagrams\Curcuit_ReadLines.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\Curcuit_ReadLines.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\Curcuit_ReadLines.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="UMLClassDiagramVersie1.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -36,5 +50,6 @@
     <Content Include="ModelDefinition\Models.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="SequenceDiagrams" />
   </ItemGroup>
 </Project>
