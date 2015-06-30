@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Visitor;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,15 +10,12 @@ namespace DesignPatterns.Components
     {
         public bool state;
         protected bool AlreadyCalculated { get; set; }
+
         protected List<GenericComponent> input;
+
         public List<GenericComponent> output = new List<GenericComponent>();
-        public GenericComponent()
-        {
-            AlreadyCalculated = false;
-            state = false;
-        }
+
         public abstract void Execute();
-        public abstract void Accept(ComponentVisitor visitor);
         public void addInput(GenericComponent component)
         {
             if (modifyArray(null, component))
@@ -57,19 +53,6 @@ namespace DesignPatterns.Components
                 return true;
             }
             return false;
-        }
-
-        protected void notifyOutput()
-        {
-            for (int i = 0; i < output.Count; i++)
-            {
-                output[i].Trigger();
-            }
-        }
-
-        public void printState()
-        {
-            Console.WriteLine(this.state);
         }
         //executes a generic modification on the array, replacing the target component with the value
         private bool modifyArray(GenericComponent target, GenericComponent value)

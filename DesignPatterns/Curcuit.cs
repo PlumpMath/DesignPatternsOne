@@ -1,6 +1,5 @@
 ﻿using DesignPatterns.Components;
 using DesignPatterns.Factories;
-using DesignPatterns.Visitor;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,6 +18,7 @@ namespace DesignPatterns
             Curcuit curcuit = new Curcuit();
             curcuit.ReadLines();
             curcuit.Execute();
+            curcuit.PrintComponents();
             Console.ReadLine();
         }
 
@@ -45,7 +45,11 @@ namespace DesignPatterns
 			    }
 		    } catch (Exception e) {
 			    Console.WriteLine("ERROR: " + e.Message);
-		    }
+		    }            
+        }
+
+        public void PrintComponents()
+        {
             foreach (KeyValuePair<string, GenericComponent> kv in components)
             {
                 Console.WriteLine(kv.Key + " " + kv.Value.state);

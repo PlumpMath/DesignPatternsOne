@@ -53,9 +53,6 @@
     <Compile Include="Curcuit.cs" />
     <Compile Include="Factories\GenericComponentFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Visitor\ComponentVisitor.cs" />
-    <Compile Include="Visitor\SourceListVisitor.cs" />
-    <Compile Include="Visitor\MakeProbeListVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

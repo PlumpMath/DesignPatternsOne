@@ -25,6 +25,6 @@ C:\Projects\DesignPatternsOne\DesignPatterns\bin\Debug\Resources\circuit3.txt
 C:\Projects\DesignPatternsOne\DesignPatterns\bin\Debug\Resources\circuit4.txt
 C:\Projects\DesignPatternsOne\DesignPatterns\bin\Debug\DesignPatterns1.exe
 C:\Projects\DesignPatternsOne\DesignPatterns\bin\Debug\DesignPatterns1.pdb
-C:\Projects\DesignPatternsOne\DesignPatterns\obj\Debug\DesignPatterns.csprojResolveAssemblyReference.cache
 C:\Projects\DesignPatternsOne\DesignPatterns\obj\Debug\DesignPatterns1.exe
 C:\Projects\DesignPatternsOne\DesignPatterns\obj\Debug\DesignPatterns1.pdb
+C:\Projects\DesignPatternsOne\DesignPatterns\obj\Debug\DesignPatterns.csprojResolveAssemblyReference.cache

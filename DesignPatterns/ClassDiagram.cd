@@ -77,5 +77,12 @@
       <FileName>Components\XOR.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="DesignPatterns.Factories.GenericComponentFactory" Collapsed="true">
+    <Position X="1.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Factories\GenericComponentFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

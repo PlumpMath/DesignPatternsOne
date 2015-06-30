@@ -16,3 +16,14 @@ C:\Projects\DesignPatterns\ComponentTests\bin\Debug\Resources\circuit1.txt
 C:\Projects\DesignPatterns\ComponentTests\bin\Debug\Resources\circuit2.txt
 C:\Projects\DesignPatterns\ComponentTests\bin\Debug\Resources\circuit3.txt
 C:\Projects\DesignPatterns\ComponentTests\bin\Debug\Resources\circuit4.txt
+C:\Projects\DesignPatternsOne\ComponentTests\obj\Debug\ComponentTests.csprojResolveAssemblyReference.cache
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\Resources\circuit1.txt
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\Resources\circuit2.txt
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\Resources\circuit3.txt
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\Resources\circuit4.txt
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\ComponentTests.dll
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\ComponentTests.pdb
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\DesignPatterns1.exe
+C:\Projects\DesignPatternsOne\ComponentTests\bin\Debug\DesignPatterns1.pdb
+C:\Projects\DesignPatternsOne\ComponentTests\obj\Debug\ComponentTests.dll
+C:\Projects\DesignPatternsOne\ComponentTests\obj\Debug\ComponentTests.pdb
